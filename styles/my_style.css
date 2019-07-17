@@ -15,9 +15,10 @@ body{
   display: flex;
   vertical-align: middle;
   padding-left: 45px;
+  border-radius: 3px;
 }
 
-.vl {
+.separator {
   border-left: 1px solid;
   border-color: #cecece;
   height: 40px;
@@ -67,7 +68,7 @@ a{
     margin-right: 10px;
   }
 
-  .vl {
+  .separator {
     position: static;
   }
 
