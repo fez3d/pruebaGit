@@ -1,0 +1,100 @@
+body{
+  background-color: #cecece;
+}
+
+.row-container{
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 10px;
+}
+
+.row{
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 5px;
+  display: flex;
+  vertical-align: middle;
+  padding-left: 45px;
+  border-radius: 3px;
+}
+
+.separator {
+  border-left: 1px solid;
+  border-color: #cecece;
+  height: 40px;
+  padding-left: 5px;
+  position: absolute;
+  left: 920px;
+}
+
+
+.date{
+  font-size: 14px;
+  text-align: top;
+  color: rgb(155, 155, 155);
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.title{
+  font-size: 18px;
+  color: rgb(74, 74, 74);
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.price{
+  font-size: 18px;
+  color: rgb(74, 74, 74);
+  margin-bottom: 2px;
+  margin-top: 13px;
+}
+
+.text{
+  margin-top: 4px;
+}
+
+a{
+  font-size: 14px;
+  color: rgb(141, 122, 255);
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .row-container{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .separator {
+    position: static;
+  }
+
+  .title{
+    font-size: 12px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+
+  .text{
+    margin-top: 4px;
+  }
+
+  .row{
+    padding-left: 5px;
+  }
+
+  .date{
+    font-size: 10px;
+  }
+
+  .price{
+    font-size: 12px;
+  }
+
+  a{
+    font-size: 10px;
+  }
+}
