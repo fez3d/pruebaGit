@@ -41,17 +41,9 @@ body {
         border-radius: 15px;
         color: #0027f3; }
     .container .sub-container ul {
+      color: grey; }
+    .container .sub-container span {
       color: #6c5ce7; }
-    .container .sub-container li::before {
-      list-style-type: circle;
-      content: "\2022";
-      color: #343a40;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em; }
-    .container .sub-container ul {
-      list-style-type: none; }
     .container .sub-container .buttons {
       text-align: right; }
       @media screen and (min-width: 992px) {

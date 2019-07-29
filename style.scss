@@ -66,22 +66,13 @@ body {
     }
 
     ul {
-      color: #6c5ce7
+      color: grey
     }
 
-    li::before {
-      list-style-type: circle;
-      content: "\2022";
-      color: $buttons-color;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
+    span {
+      color: #6c5ce7;
     }
 
-    ul {
-      list-style-type: none;
-    }
 
     .buttons {
       text-align: right;
