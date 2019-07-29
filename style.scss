@@ -11,108 +11,105 @@ body {
 
 .container {
   margin: 15px;
-}
+  
+  h5 {
+    color: $paragraph-color;
+    margin: 0px;
+  }
 
-h5 {
-  color: $paragraph-color;
-  margin: 0px;
-}
+  h1 {
+    color: $buttons-color;
+    margin: 0px;
+    padding-bottom: 25px;
+  }
 
-i {
-  padding: 15px;
-  color: black;
-  border-radius: 4px;
-}
+  .sub-container {
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    color: $paragraph-color;
+    padding: 24px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
 
-h1 {
-  color: $buttons-color;
-  margin: 0px;
-  padding-bottom: 25px;
-}
+    div {
+      a {
+        color: $buttons-color;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 4px;
+      }
 
-.sub-container {
-  border-radius: 5px;
-  background-color: white;
-  font-size: 16px;
-  color: $paragraph-color;
-  padding: 24px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
-}
+      p {
+        margin-top: 0px;
+      }
+    }
 
-.footer-link {
-  p {
-    a{
-      padding: 11px 18px 11px 18px;
-      background-color: $footer-background-color;
-      border-radius: 15px;
+    .hover:hover {
+      background-color: $primary-color;
+    }
+
+    .footer-links {
+      border-bottom: 1px solid green;
+      border-color: $paragraph-color;
+      padding-bottom: 10px;
+      font-size: 12px;
       color: $footer-color;
+      line-height: 45px;
+
+      a {
+        padding: 11px 18px 11px 18px;
+        background-color: $footer-background-color;
+        border-radius: 15px;
+        color: $footer-color;
+      }
+    }
+
+    ul {
+      color: #6c5ce7
+    }
+
+    li::before {
+      list-style-type: circle;
+      content: "\2022";
+      color: $buttons-color;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .buttons {
+      text-align: right;
+
+      @media screen and (min-width: 992px) {
+        float: right;
+        margin-top: 7px;
+      }
+    }
+
+    .info {
+      @media screen and (min-width: 992px) {
+        margin-top: 70px;
+      }
+    }
+
+    .date {
+      @media screen and (min-width: 992px) {
+        float: left;
+        margin-top: 19px;
+      }
+    }
+
+    i {
+      padding: 15px;
+      color: black;
+      border-radius: 4px;
     }
   }
 }
 
-div {
-  a {
-    color: $buttons-color;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 4px;
-  }
-
-  p {
-    margin-top: 0px;
-  }
-}
-
-.hover:hover{
-  background-color: $primary-color;
-}
-
-.footer_links {
-  border-bottom: 1px solid green;
-  border-color: $paragraph-color;
-  padding-bottom: 10px;
-  font-size: 12px;
-  color: $footer-color;
-  line-height: 45px;
-}
-
-ul {
-  color: #6c5ce7
-}
-
-ul::before {
-  list-style-type: circle;
-  content: "\2022";
-  color: $buttons-color;
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
-
-li {
-  list-style-type: none;
-}
-
-.buttons {
-  text-align: right;
-
-  @media screen and (min-width: 992px) {
-    float: right;
-    margin-top: 7px;
-  }
-}
-
-.info {
-  @media screen and (min-width: 992px) {
-    margin-top: 70px;
-  }
-}
-
-.date {
-  @media screen and (min-width: 992px) {
-    float: left;
-    margin-top: 19px;
-  }
-}
