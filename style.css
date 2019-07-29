@@ -46,14 +46,14 @@ body {
       color: #6c5ce7; }
     .container .sub-container .buttons {
       text-align: right; }
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 376px) {
         .container .sub-container .buttons {
           float: right;
           margin-top: 7px; } }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 376px) {
       .container .sub-container .info {
         margin-top: 70px; } }
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 376px) {
       .container .sub-container .date {
         float: left;
         margin-top: 19px; } }

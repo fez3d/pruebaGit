@@ -3,6 +3,7 @@ $paragraph-color: #6c7686;
 $buttons-color: #343a40;
 $footer-color: #0027f3;
 $footer-background-color: #f3f5fe;
+@import "min_width";
 
 body {
   background-color: $primary-color;
@@ -77,20 +78,20 @@ body {
     .buttons {
       text-align: right;
 
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $min-width-size) {
         float: right;
         margin-top: 7px;
       }
     }
 
     .info {
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $min-width-size) {
         margin-top: 70px;
       }
     }
 
     .date {
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: $min-width-size) {
         float: left;
         margin-top: 19px;
       }
