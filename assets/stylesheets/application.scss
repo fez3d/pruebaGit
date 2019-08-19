@@ -1,0 +1,103 @@
+body {
+  color: #535353;
+  background-color: #FDFDFD;
+
+  .container {
+
+    .page-selector {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .selector-button {
+        margin-bottom: 10px;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #E9E9E9;
+      }
+
+      .page-counter {
+        margin: 11px 25px 18px 25px;
+      }
+    }
+
+    .info-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media screen and (min-width: 376px) {
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: flex-start;
+        margin-left: 220px;
+      }
+
+      .info {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        padding: 9px;
+        box-shadow: 1px 1px 1px grey;
+        margin-bottom: 7px;
+        width: 341px;
+        
+        @media screen and (min-width: 376px) {
+          margin-right: 17px;
+        }
+
+        .info-image {
+          width: 110px;
+          height: 110px;
+          border-radius: 2px;
+        }
+
+        .info-text {
+          margin: 0;
+          padding-left: 8px;
+          font-size: 14px;
+          width: 220px;
+
+          .first-text {
+            margin-top: 6px;
+            margin-bottom: 17px;
+          }
+
+          .last-text {
+            margin-bottom: -2px;
+          }
+        }
+
+        .info-status {
+          width: 110px;
+          text-align: center;
+          font-size: 11px;
+          color: #917CF7;
+          padding-top: 3px;
+
+          .first-text {
+            margin: 0px;
+          }
+        }
+
+        .info-buttons {
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 10.5px;
+
+          .first-text {
+            margin: 0px;
+            margin-left: 7px;
+            padding: 2px;
+            border-radius: 3px;
+            background-color: #917CF7;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
