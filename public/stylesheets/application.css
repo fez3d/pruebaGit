@@ -1,6 +1,7 @@
 body {
   color: #535353;
-  background-color: #FDFDFD; }
+  background-color: #FDFDFD;
+  font-family: Arial, Helvetica, sans-serif; }
   body .container .page-selector {
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +54,7 @@ body {
       body .container .info-container .info .info-status {
         width: 110px;
         text-align: center;
-        font-size: 11px;
+        font-size: 12.5px;
         color: #917CF7;
         padding-top: 3px; }
         body .container .info-container .info .info-status .status-text {
@@ -61,7 +62,7 @@ body {
       body .container .info-container .info .info-buttons {
         display: flex;
         flex-wrap: wrap;
-        font-size: 10.5px; }
+        font-size: 11.5px; }
         body .container .info-container .info .info-buttons .button-text {
           margin: 0px;
           margin-left: 7px;
