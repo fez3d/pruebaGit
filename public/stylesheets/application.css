@@ -19,9 +19,9 @@ body {
     justify-content: center; }
     @media screen and (min-width: 376px) {
       body .container .info-container {
-        margin-right: 220px;
+        margin-right: 210px;
         justify-content: center;
-        margin-left: 220px; } }
+        margin-left: 210px; } }
     body .container .info-container .info {
       display: flex;
       flex-wrap: wrap;

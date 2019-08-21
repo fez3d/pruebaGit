@@ -26,7 +26,7 @@ function addCards(response) {
   $("#page-counter").text(`${response.page} a ${response.total_pages}`);
   history.pushState({
     id: 'homepage'
-  }, 'Homie', `${window.location.href.split('?')[0]}?page=${response.page}`);
+  }, 'Homie', `${location.href.split('?')[0]}?page=${response.page}`);
   $(".info-container").empty();
 
   response.data.forEach(element => {
@@ -39,13 +39,13 @@ function addCards(response) {
           
           <div class="info-text">           
             <div>
-                <p class="info-title"><strong> California 284</strong></p>
-                <p class="info-price">$32,000</p>
+              <p class="info-title"><strong> California 284</strong></p>
+              <p class="info-price">$32,000</p>
             </div>
 
             <div>
-                <p class="info-name">${element.first_name} ${element.last_name}</p>
-                <p class="info-title">${element.email}</p>
+              <p class="info-name">${element.first_name} ${element.last_name}</p>
+              <p class="info-title">${element.email}</p>
             </div>
           </div>
 
@@ -64,11 +64,10 @@ function addCards(response) {
 }
 
 function setUrl() {
-  var url_string = window.location.href;
+  var url_string = location.href;
   var url = new URL(url_string);
   var page = url.searchParams.get("page");
   updateCards(page);
 }
 
-window.onhashchange = function() { setUrl() }
 setUrl();
